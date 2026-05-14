@@ -1,10 +1,8 @@
-n = int(input("Введите n: "))
-def fib(n):
-    if n <= 0:
-        return 0
-    elif n == 1 or n == 2:
-        return 1
-    else:
-        return fib(n-1)+fib(n-2)
-result = fib(n)
-print(result)
+def fib(a):
+    if a < 3:
+        if a <= 1:
+            return 0
+        if a == 2:
+            return 1
+    return fib(a - 1) + fib(a-2)
+print(fib(10))
